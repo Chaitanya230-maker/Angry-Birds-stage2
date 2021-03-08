@@ -7,7 +7,7 @@ var box1, pig1;
 var bg;
 
 function preload(){
-    bg=loadImage("sprites/bg.png")
+    bg=loadImage("bg.png")
 }
 
 function setup(){
