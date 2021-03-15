@@ -7,13 +7,19 @@ class Slingshot
         World.add(world,this.Slingshot);
 
     }
-
+    fly()
+    {
+        this.Slingshot.bodyA=null;
+    }
+    
     display(){
+        if(this.Slingshot.bodyA!==null){
         push();
         strokeWeight(5);
         stroke("orange");
         line(this.Slingshot.bodyA.position.x,this.Slingshot.bodyA.position.y,this.Slingshot.pointB.x,this.Slingshot.pointB.y);
-        pop();
+        pop();}
     }
+
     
 }

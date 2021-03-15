@@ -61,3 +61,12 @@ function draw(){
     bird.display();
     sling.display();
 }
+
+function mouseDragged()
+{
+    Matter.Body.setPosition(bird.body,{x:mouseX,y:mouseY})
+}
+function mouseReleased()
+{
+    sling.fly();
+}
